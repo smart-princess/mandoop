@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zainabalmezeini.mandoob.CustomerInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="257dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="20dp"
+    android:background="#43A047"
+    android:gravity="right"
+    android:text="@string/sTypr"
+    android:textAppearance="@style/heding"
+    />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/serviceType">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="طلب توصيل"
+                android:id="@+id/arrive"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="طلب شراء"
+                android:id="@+id/buy"
+                android:textSize="20dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="15dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ser"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="#43A047"
+            android:gravity="right"
+            android:text="@string/senderInfo"
+            android:textAppearance="@style/heding"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/sendrtName"
+            android:layout_marginLeft="258dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/senderName"
+            android:hint="ادخل اسمك"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/senderWahs"
+            android:layout_marginLeft="235dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ادخل رقمك"
+            android:inputType="phone"
+            android:id="@+id/senderNumber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/type"
+            android:layout_marginLeft="290dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ادخل نوع الغرض "
+            android:inputType="text"
+            android:id="@+id/things"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/sAddresss"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ادخل مكان تواجدك لاستلام الغرض منك"
+            android:inputType="text"
+            android:id="@+id/senderAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/timeTake"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ادخل الوقت واليوم والتاريخ الملائم لك لانتشال الغرض"
+            android:inputType="text"
+            android:id="@+id/time"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="#43A047"
+            android:gravity="right"
+            android:text="@string/resiverInfo"
+            android:textAppearance="@style/heding"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/resiverNumber"
+            android:layout_marginLeft="207dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ادخل رقم هاتف المرسل إليه"
+            android:inputType="number"
+            android:id="@+id/resiverNumber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/resiverDdress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ادخل عنوان المرسل إليه"
+            android:inputType="text"
+            android:id="@+id/resiverAddress"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/kowOrNor"
+            android:layout_marginLeft="86dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/gift">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نعم"
+                android:id="@+id/know"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لا هدية"
+                android:id="@+id/notKnow"
+                android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/giftor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/anyPrice"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/money">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نعم"
+                android:id="@+id/yesPrice"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لا"
+                android:id="@+id/noPrice"
+                android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/price"
+            android:layout_marginLeft="220dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ادخل المبلغ الذي سيقوم المندوب بإستلامه نيابة عنك"
+            android:inputType="number"
+            android:id="@+id/priceE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/wayPay"
+            android:layout_marginLeft="290dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/wayPay">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عند الاستلام"
+                android:id="@+id/withS"
+                android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عند التسليم"
+                android:id="@+id/withR"
+                android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تحويل أو إيداع بنكي"
+                android:id="@+id/sendBank"
+                android:textSize="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/monyPay"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/nots"
+            android:layout_marginLeft="185dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="اذا كانت لديك ملاحظه تود ارفاقها اكتبها هنا "
+            android:inputType="text"
+            android:id="@+id/note"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="استعراض البيانات"
+            android:textSize="18dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#43A047"
+            android:onClick="submit"/>
+
+    </LinearLayout>
+
+</ScrollView>
